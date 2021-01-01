@@ -115,6 +115,7 @@
 
   - [Java Programming - Package and Classpath](https://www3.ntu.edu.sg/home/ehchua/programming/java/J9c_PackageClasspath.html)
   - [생활코딩 - 클래스 패스](https://opentutorials.org/course/1223/5527)
+  - [자바 클래스패스(classpath)란?](https://effectivesquid.tistory.com/entry/%EC%9E%90%EB%B0%94-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%8C%A8%EC%8A%A4classpath%EB%9E%80)
   - 책 - Java의 정석(남궁성 지음)
 
 - 별첨
