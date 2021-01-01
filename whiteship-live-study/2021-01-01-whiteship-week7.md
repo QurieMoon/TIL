@@ -42,7 +42,7 @@
       >
       > [참고 글 2: Java package in package?](https://stackoverflow.com/questions/13809713/java-package-in-package)
       >
-      > - [Sub package 관련 테스트](#Sub-package-관련-테스트)
+      > - [(별첨) Sub package 관련 테스트](#Sub-package-관련-테스트)
       >
       >   --> 자신의 하위 디렉토리에 위치한 패키지라도 완전히 별도의 패키지로 취급됨을 확인했습니다.
 
@@ -60,6 +60,11 @@
   - `import` 키워드는 특정 패키지/클래스/인터페이스를 사용하고 싶을 때, 사용합니다.
 
 - 클래스패스
+
+  - jvm이 프로그램을 실행하기 위해서 클래스파일을 찾을 때, 기준이 되는 파일 경로
+  - 클래스패스를 지정하는 두 가지 방법
+    1. `CLASSPATH` 환경변수 이용
+    2. `-classpath` 사용
 
 - CLASSPATH 환경변수
 
