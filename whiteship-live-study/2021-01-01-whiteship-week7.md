@@ -118,7 +118,7 @@
 
     - 서브 패키지 구조 확인을 위해서, 아래와 같이 패키지를 만들었습니다.
 
-      ![springboot-jar-hierarchy](./서브패키지-테스트-패키지-구조.png)
+      ![springboot-jar-hierarchy](./images/서브패키지-테스트-패키지-구조.png)
 
     - 서브 패키지 개념이 존재한다면, `com.sample.test` 에 있는 모든 entity를 참조하는 것만으로도 `com.sample.test.sub.SubHoloman` 클래스를 불러올 수 있을 것이라 생각되어, 아래와 같이 메인클래스 코드를 써봤습니다.
 
