@@ -8,7 +8,7 @@
 
 - [enum 정의하는 방법](#enum-정의하는-방법)
 - [enum 활용하는 방법](#enum-활용하는-방법)
-- [enum이 제공하는 메소드 (values()와 valueOf())](#enum이-제공하는-메소드-values\()와 valueOf\())
+- [enum이 제공하는 메소드 \(values\(\)와 valueOf\(\)\)](#enum이-제공하는-메소드-values\(\)와 valueOf\(\))
 - [java.lang.Enum](#java.lang.Enum)
 - [EnumSet](#EnumSet)
 
