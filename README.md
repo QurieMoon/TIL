@@ -13,7 +13,7 @@
     - [7주차 과제: 패키지](./whiteship-live-study/2021-01-01-whiteship-week7.md)
     - [11주차 과제: Enum](https://github.com/QurieMoon/TIL/blob/main/whiteship-live-study/2021-01-30-whiteship-week11.md)
 - 기타
-  - [ScriptEngine(Nashorn) 내 javascript 변수 사용 유의점](https://quriemoon.github.io/work/ScriptEngine-nashorn-part-1/)
+  - [ScriptEngine(Nashorn) 내 javascript var 변수 사용 시, 유의점](https://quriemoon.github.io/work/ScriptEngine-nashorn-part-1/)
 - 책 정리
 - &laquo;How Linux Works&raquo; 책 정리
 - 
