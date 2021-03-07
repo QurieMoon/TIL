@@ -13,7 +13,7 @@
 
 ## 학습 내용
 
-###제네릭 사용법
+### 제네릭 사용법
 
 - 제네릭이란
 
@@ -68,7 +68,7 @@
 
   - 위 코드에서 T가 type parameter(타입 변수)이다.
 
-###제네릭 주요 개념
+### 제네릭 주요 개념
 
 - 바운디드 타입
 
@@ -162,7 +162,7 @@
     > <참고> `Object`는 모든 java class의 supertype이지만, `Object` 가 사용된 collection은 해당 없다.
     > 예시) List\<Object\> 는 List\<String\>의 supertype이 아니다.
 
-###제네릭 메소드 만들기
+### 제네릭 메소드 만들기
 
 - 제네릭 메소드란
 
@@ -195,7 +195,7 @@
   - 제네릭 메소드의 body는 일반 메소드 body와 동일하다.
 
 
-###Erasure
+### Erasure
 
 - 제네릭 사용에 따른 runtime 시, overhead를 줄이기 위하여,
   컴파일러는 컴파일 시점에 **type erasure** 라는 절차를 도입했다.
