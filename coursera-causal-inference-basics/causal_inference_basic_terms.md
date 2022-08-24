@@ -56,6 +56,7 @@ Coursera에서 제공되고 있는 [A Crash Course in Causality: Inferring Causa
  - Treatment와 outcome **모두에** 영향을 주는 변수!
  - 따라서 ignorability assumption을 지키기 위해서 이러한 confounder를 통제해야한다..!
  - 이때, 이러한 confounder로 분류될 변수를 식별해내려는 상황에서 유용하게 사용할 수 있는 게 바로 causal graph!
+   + 추가적으로, **이러한 confounder를 treatment를 결정하기 전에 찾아내야한다!**
 
 -----------------------------------------
 
