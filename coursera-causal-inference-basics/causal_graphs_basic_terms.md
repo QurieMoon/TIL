@@ -39,13 +39,62 @@ arrow: link(edge, directed path)
 ### Parent, child, ancestor, descendant
 
 ### Association
- - 노드 A와 B가 "associate"되었다는 말은 무슨 말일까? 바로 A와 B를 양끝점으로 가지는 path가 존재하면서 해당 path가 아래 조건을 충족한다는 뜻이다.
+ - 노드 A와 B가 "associate"되었다는 말은 무슨 말일까? 바로 A와 B를 양끝점으로 가지는 path가 존재하면서 해당 path가 아래 조건 중 하나를 충족한다는 뜻이다.
    <ul>충족해야하는 조건
       <li>양노드에 모두 information이 유입되어야한다</li>
-      <li>양노드에 모두 information이 유입되어야한다</li>
-
+      <li>하나의 노드에 information이 다른 하나의 node로 유입되어야한다</li>
    </ul>
 
-   다른 강의 보고 association 정의 다시 찾고
-   코세라 Paths and associations 부터 정리!
-   
+ - 그렇다면 association 이 아닌 관계는 어떤 게 있을까? 예시로 inverted fork 형태를 떠올릴 수 있다.  
+   <center>A &rarr; B &larr; C</center>  
+  이때, 위 B를 **collider** 라고 한다.
+
+### Collider
+ - Collider bias: Collider를 통제함으로써 발생하는 문제 상황을 가리키는 듯(불필요한 association이 생기는 문제 상황)
+ - Path 중간에 collider가 있다면 노드 간 association은 없어보인다.
+
+### Blocked
+ - Block 은 condition 을 취함으로써 이루어진다.  
+   &rarr; 변수 A에 condition을 취했다는 말은 **변수 A를 통제했다는 말과 같다!**
+ - <주의> Collider에 condition 을 취할 경우, 새로운 association이 생긴다!!
+
+### D-separation
+ - 어떤 **path**가 어떤 노드의 집합 C에 의해서 d-separated 되었다는 말은 C의 원소 vertices에 의해서 이 path가 block 되었다는 뜻이다.
+ - 마찬가지로, A와 B라는 두개의 노드가 어떤 노드의 집합 C에 의해서 d-separated 되었다는 말은 C에 속하는 vertices에 의해서 A와 B사이에 **모든** path가 막혔다는 뜻이다.  
+   &rarr; 즉, C에 condition이 취해졌을 때, A와 B는 독립이다.
+
+### Frontdoor path
+ - A frontdoor path from A to Y: A에서 출발하는 화살표로 시작되는 path
+ - 예시: A &rarr; Z &rarr; Y
+ - **이 frontdoor path가 우리가 목표하는 treatment effect를 나타낸다!**  
+   &rarr; 따라서 이 frontdoor path는 block 하면 안 된다.
+
+### Backdoor path
+ - A backdoor path from A to Y: A에서 Y로 가는 path인데, A로 들어가는 화살표를 포함한 path
+ - 예시: A <- X -> Y
+ - 이러한 backdoor path가 A와 Y의 관계를 confounding 한다 &rarr; **Backdoor path를 blocking 해야한다!** (이 작업이 사실상 confounder를 controlling하는 작업이라고 생각할 수 있다)
+
+### Backdoor path criterion
+ - How to block all backdoor paths from treatment to the outcome
+ <ul>
+   <li>Treatment에서 outcome으로 가는 모든 backdoor path 를 블록하면서</li>
+   <li>Treatment의 descendant는 confounder 집합에 포함시키지 않는 confounder set을 찾아야함!</li>
+ </ul>
+
+ - 이러한 backdoor path criterion은 반드시 unique하지는 않다.
+ 
+### Disjunctive cause criterion
+ - DAG의 전체 형상을 모를 때, 대안으로 사용할 수 있는 방법
+   &rarr; 전체 그래프를 몰라도 treatment(A) 혹은 outcome(Y)에 영향을 주는 변수들만 알면 된다.
+
+ - 한계점
+   <ul>
+     <li>이러한 set이 존재하지 않을 수도 있고</li>
+     <li>A 혹은 Y에 영향을 끼치는 모든 variables을 식별할 수 있어야함</li>
+   </ul>
+
+
+
+
+
+
