@@ -5,6 +5,10 @@
 ## 현재진행중
  - 강의 정리
    - [A Crash Course in Causality: Inferring Causal Effects from Observational Data(University of Pennsylvania)](https://www.coursera.org/learn/crash-course-in-causality/home/welcome)
+     + [인과관계 추론 - 기본 용어 및 개념](https://github.com/QurieMoon/TIL/blob/main/coursera-causal-inference-basics/causal_inference_basic_terms.md)
+     + [Causal graph - 기본 용어 및 개념](https://github.com/QurieMoon/TIL/blob/main/coursera-causal-inference-basics/causal_graphs_basic_terms.md)
+     + [Matching - 기본 용어 및 개념](https://github.com/QurieMoon/TIL/blob/main/coursera-causal-inference-basics/matching_basic_terms.md)
+     + [Propensity score - 기본 용어 및 개념](https://github.com/QurieMoon/TIL/blob/main/coursera-causal-inference-basics/propensity_scores_basic_terms.md)
 
 ## 과거
 - 강의
