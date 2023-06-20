@@ -3,6 +3,8 @@
 매일 공부!
 
 ## 현재진행중
+ - Oracle SQL
+   + [Tips!](https://github.com/QurieMoon/TIL/blob/main/oracle-sql/practice-sql-programmers.md)
  - 강의 정리
    - [A Crash Course in Causality: Inferring Causal Effects from Observational Data(University of Pennsylvania)](https://www.coursera.org/learn/crash-course-in-causality/home/welcome)
      + [인과관계 추론 - 기본 용어 및 개념](https://github.com/QurieMoon/TIL/blob/main/coursera-causal-inference-basics/causal_inference_basic_terms.md)
